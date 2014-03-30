@@ -1,0 +1,138 @@
+			@font-face{
+				font-family: "Accidental Presidency";
+				src: url('AccidentalPresidency.ttf'),
+				url('AccidentalPresidency.eot'); /* IE */
+			}
+			@font-face{
+				font-family: "Copperplate Gothic Light";
+				src: url('header.ttf');		
+			}					
+			body {
+				min-width: 1280px;
+				margin: 0px 0px;
+				background-image:url(resources/background.png);
+			}
+			a:focus {
+    			outline: 0;
+			}
+			#header {
+				height: 150px;
+				width: 100%;
+				background-image:url(resources/headerBG.png);
+				background-size:cover;
+				box-shadow: #555555 0px 5px 5px;
+			}	
+			#header img{
+				margin-left: 50px;
+				position : absolute;
+				height: 120px;
+			}
+			#header a, a:visited{
+				margin: none;
+				text-decoration: none;
+			}
+			#header h1 {
+				margin: 0px 200px;
+				padding-top:20px;
+				line-height: 10px;
+				font-family: Copperplate Gothic Light;
+				font-size: 35px;
+				color: #ffffff;
+			}
+			#pinned{
+				margin: 20px auto;
+				width: 996px;
+				position: relative;
+				font-size: 25px;
+				font-family: Accidental Presidency;
+				box-shadow: #555555 2px 2px 2px;
+			}
+			#pinned table {
+				background-color: #f1f1f1;
+				border-radius:4px;
+			}
+			#pinned a{
+				border-left:solid 2px;
+				padding-left:88.5px;
+				padding-right:88.5px;
+				line-height:2;
+				text-decoration:none;
+				color: #1e1e1e;
+				background-color: #f1f1f1;
+				border-color:#E5E5E5;
+			}
+			#pinned a:first-child{
+				border-left: none;
+			}
+			#pinned a:hover{
+				background-color:#e5e5e5;	
+			}
+			#contentbox{
+				margin: 0px auto;
+				width: 996px;
+				position:relative;
+				font-family: Accidental Presidency;
+				background-color: #f1f1f1;
+				border-radius: 4px;
+				padding-bottom: 100px;
+				margin-bottom: 150px;
+				box-shadow: #555555 2px 2px 2px;
+				}
+			#contentbox h2,p{
+				font-family: Accidental Presidency;
+				padding: 3px;
+				padding-left: 20px;
+				word-wrap: break-word;
+			}
+			#quicklinks table{
+				position: absolute;	
+				margin-left: 760px;
+			}
+			#quicklinks td{
+				border-right:10px solid;
+				border-bottom: 5px solid;
+				border-color:#f1f1f1;
+				background-color:#e5e5e5;
+				width:90px;
+				height:174px;
+			}
+			.slideshow img{
+				margin-left:100px;
+				position:relative;	
+			}
+			.slidecontrol{
+				padding-top:5px;
+				margin-left:809px;
+			}
+			.slidecontrol img{
+				width:30px;
+				height:25px;
+			}
+			#footer{
+				background-color:#2e2e2e;
+				height: 150px;
+				font-family: calibri;
+				box-shadow: #555555 0px -5px 5px;
+			}
+			#footer table{
+				padding-top: 30px;
+				margin: 0px auto;
+				width: 290px;
+				position:relative;
+				font-size: 14px;
+				color: #e5e5e5;
+			}
+			#footer td{
+				padding-left:3px;
+				border-left:1px solid;
+			}
+			#footer td:first-child{
+				border-left:0px solid;
+			}
+			#footer h3{
+				font-size:14px;
+				color:#e5e5e5;				
+				margin: 0px auto;
+				width: 140px;
+				position:relative;
+			}
