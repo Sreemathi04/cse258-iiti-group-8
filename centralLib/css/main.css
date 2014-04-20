@@ -1,28 +1,38 @@
 			@font-face{
-				font-family: "Accidental Presidency";
-				src: url('AccidentalPresidency.ttf'),
+				font-family: "Text";
+				src: url('text.otf'),
 				url('AccidentalPresidency.eot'); /* IE */
 			}
 			@font-face{
-				font-family: "Copperplate Gothic Light";
-				src: url('header.ttf');		
+				font-family: "Header";
+				src: url('header3.otf');		
+			}
+			html,body{
+				height:100%;
+				margin: 0px 0px;
 			}					
 			body {
+				min-height:100%;
 				min-width: 1280px;
-				margin: 0px 0px;
-				background-image:url(resources/background.png);
+				background-image:url(resources/background2.png);
+				background-size:cover;
+				background-position:center;
 			}
 			a:focus {
     			outline: 0;
 			}
+			#wrap{
+				min-height:100%;	
+			}
 			#header {
-				height: 150px;
+				height: 180px;
 				width: 100%;
-				background-image:url(resources/headerBG.png);
+				background-image:url(resources/headerBg2.jpg);
 				background-size:cover;
 				box-shadow: #555555 0px 5px 5px;
-			}	
+			}
 			#header img{
+				margin-top:15px;
 				margin-left: 50px;
 				position : absolute;
 				height: 120px;
@@ -35,7 +45,7 @@
 				margin: 0px 200px;
 				padding-top:20px;
 				line-height: 10px;
-				font-family: Copperplate Gothic Light;
+				font-family: Header;
 				font-size: 35px;
 				color: #ffffff;
 			}
@@ -44,7 +54,7 @@
 				width: 996px;
 				position: relative;
 				font-size: 25px;
-				font-family: Accidental Presidency;
+				font-family: Text;
 				box-shadow: #555555 2px 2px 2px;
 			}
 			#pinned table {
@@ -53,8 +63,8 @@
 			}
 			#pinned a{
 				border-left:solid 2px;
-				padding-left:88.5px;
-				padding-right:88.5px;
+				padding-left:76.75px;
+				padding-right:76.75px;
 				line-height:2;
 				text-decoration:none;
 				color: #1e1e1e;
@@ -68,21 +78,34 @@
 				background-color:#e5e5e5;	
 			}
 			#contentbox{
+				color:e1e1e1;
 				margin: 0px auto;
 				width: 996px;
 				position:relative;
-				font-family: Accidental Presidency;
+				font-family: Text;
 				background-color: #f1f1f1;
 				border-radius: 4px;
 				padding-bottom: 100px;
 				margin-bottom: 150px;
 				box-shadow: #555555 2px 2px 2px;
-				}
-			#contentbox h2,p{
-				font-family: Accidental Presidency;
+			}
+			#contentbox h2,h3,p{
+				max-width: 990px;
+				margin-right:auto;
+				font-family: Text;
 				padding: 3px;
 				padding-left: 20px;
-				word-wrap: break-word;
+			}
+			#contentbox h2{
+				padding-left: 10px;
+			}
+			#contentbox p, h4{
+				margin-top: -15px;
+			}
+			#contentbox h4, h3{
+				font-family:calibri;
+				margin-top: -5px;
+				padding-left: 15px;
 			}
 			#quicklinks table{
 				position: absolute;	
@@ -108,16 +131,19 @@
 				width:30px;
 				height:25px;
 			}
-			#footer{
+			#footer {
+				width:100%;
+				position:relative;
+				margin-top:0px;
 				background-color:#2e2e2e;
 				height: 150px;
 				font-family: calibri;
-				box-shadow: #555555 0px -5px 5px;
+				box-shadow: #555555 -1px -3px 5px;
+				clear:both;
 			}
 			#footer table{
 				padding-top: 30px;
 				margin: 0px auto;
-				width: 290px;
 				position:relative;
 				font-size: 14px;
 				color: #e5e5e5;
@@ -133,6 +159,16 @@
 				font-size:14px;
 				color:#e5e5e5;				
 				margin: 0px auto;
-				width: 140px;
+				width: 150px;
 				position:relative;
 			}
+			#footer a,a:visited{
+				color:#e5e5e5;
+				text-decoration:none;
+			}
+			#login{
+				margin: 0px auto;
+				width : 996px;
+				position: relative;
+			}
+			
