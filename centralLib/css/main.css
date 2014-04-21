@@ -1,12 +1,13 @@
 			@font-face{
 				font-family: "Text";
-				src: url('text.otf'),
+				src: url('text2.otf'),
 				url('AccidentalPresidency.eot'); /* IE */
 			}
 			@font-face{
 				font-family: "Header";
-				src: url('header3.otf');		
+				src: url('header.otf');		
 			}
+			
 			html,body{
 				height:100%;
 				margin: 0px 0px;
@@ -43,10 +44,11 @@
 			}
 			#header h1 {
 				margin: 0px 200px;
-				padding-top:20px;
+				padding-top:32px;
 				line-height: 10px;
 				font-family: Header;
-				font-size: 35px;
+				font-size: 40px;
+				text-decoration:bold;
 				color: #ffffff;
 			}
 			#pinned{
@@ -63,8 +65,8 @@
 			}
 			#pinned a{
 				border-left:solid 2px;
-				padding-left:55.75px;
-				padding-right:55.75px;
+				padding-left:56.10px;
+				padding-right:56.10px;
 				line-height:2;
 				text-decoration:none;
 				color: #1e1e1e;
@@ -90,10 +92,11 @@
 				box-shadow: #555555 2px 2px 2px;
 			}
 			#contentbox h2,h3,h4,p{
-				max-width: 990px;
+				max-width: 980px;
 				margin-right:auto;
 				font-family: Text;
 				padding-left: 20px;
+				padding-right:20px;
 				margin-bottom:0px;
 			}
 			#contentbox h2{
