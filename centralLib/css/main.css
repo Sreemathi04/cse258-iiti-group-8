@@ -63,8 +63,8 @@
 			}
 			#pinned a{
 				border-left:solid 2px;
-				padding-left:76.75px;
-				padding-right:76.75px;
+				padding-left:55.75px;
+				padding-right:55.75px;
 				line-height:2;
 				text-decoration:none;
 				color: #1e1e1e;
@@ -89,23 +89,33 @@
 				margin-bottom: 150px;
 				box-shadow: #555555 2px 2px 2px;
 			}
-			#contentbox h2,h3,p{
+			#contentbox h2,h3,h4,p{
 				max-width: 990px;
 				margin-right:auto;
 				font-family: Text;
-				padding: 3px;
 				padding-left: 20px;
+				margin-bottom:0px;
 			}
 			#contentbox h2{
 				padding-left: 10px;
+				font-size: 35px;
 			}
-			#contentbox p, h4{
-				margin-top: -15px;
+			#contentbox a,a:visited{
+				color:#1e1e1e;
+				font-family: calibri;
+				font-size: 25px;
+				text-decoration: none;
 			}
 			#contentbox h4, h3{
+				margin-top:5px;
+				margin-bottom:0px;
+				padding-bottom:0px;
+				padding-top:0px;
 				font-family:calibri;
-				margin-top: -5px;
-				padding-left: 15px;
+				font-size:18px;
+			}
+			#contentbox a{
+				font-size:27px;	
 			}
 			#quicklinks table{
 				position: absolute;	
@@ -125,7 +135,7 @@
 			}
 			.slidecontrol{
 				padding-top:5px;
-				margin-left:809px;
+				margin-left:773px;
 			}
 			.slidecontrol img{
 				width:30px;

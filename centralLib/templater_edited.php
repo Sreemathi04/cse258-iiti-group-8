@@ -5,8 +5,15 @@
 	}
 	date_default_timezone_set('Asia/Calcutta');
 	$heading = $_POST['heading'];
+	$updatetime = substr($_POST['timestamp_update'] ,0 , 6);	
+	$timestamp = substr($_POST['timestamp_update'] , 6 , strlen($_POST['timestamp_update']));
+	
 	$time = date('H:i:s d/m/Y');
-	$timestamp = date('YmdHis'); // Preparing for y2038bug
+	if ($updatetime == "retain"){
+		$html = new DOMDocument();
+		$html->loadHTMLFile('news/'.$timestamp.'.php');
+		$time = ($html->getElementById('date')->nodeValue);
+	}
 	$content = $_POST['content'];
 	$author = $_POST['author'];
 	$newpost = "news/".$timestamp.".php";
@@ -79,5 +86,12 @@
 </body>
 </html>';
 	fwrite($handle, $data);
+	fclose($handle);
+	if ($updatetime == "update"){
+		$timestampnew = date('YmdHis');
+		echo $timestamp;
+		echo $timestampnew;
+		rename('news/'.$timestamp.'.php', 'news/'.$timestampnew.'.php');
+	}
 	header("location:index.php");
 ?>

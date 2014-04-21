@@ -28,10 +28,36 @@
 		</tr> </table>
 	</div>
 	<div id="contentbox">
+		<h2 style="padding-top:30px"> News feed</h2>
 		<br />
-		<h2> Redirect to OPAC </h2>
+		<table>
+		<?PHP
+			$files = glob("news/*"); 
+			$files = array_combine($files, array_map("basename", $files));
+			arsort($files);
+			$files = array_keys($files); 
+			$html = new DOMDocument(); 
+			for ($counter = 0; $counter < count($files); $counter++){
+				@$html->loadHTMLFile($files[$counter]);
+				$heading = ($html->getElementById('heading')->nodeValue);
+				$url = basename($files[$counter]);
+				echo "<h3><a href=\"news/$url\"> $heading </a><h3>";
+				$author = ($html->getElementById('author')->nodeValue);
+				$time = ($html->getElementById('date')->nodeValue);
+				echo "<h4>$author, $time </h4>";
+				$content = ($html->getElementById('content')->nodeValue);
+				if (strlen($content) < 294){
+					echo "<p> $content </p>";
+				} else {
+					$content = substr($content, 0, 294);
+					echo "<p> $content... </p>";
+				}
+			}
+		?>
+		</table>
 	</div>
 </div>
+
 <div id="footer">
 	<table> <tr>
 		<td> <a> About </a> </td>
