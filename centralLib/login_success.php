@@ -51,8 +51,8 @@
 		<td> <a href="http://iiti.ac.in"> IIT Indore </a> </td>
 		<?php
 			$Name = $_SESSION['myusername'];
-			echo ("<td> <a href=\"logout.php\"> Admin ($Name) Logout </a> </td>") ;
-			echo ("<td> <a href=\"login_success.php\"> Edit Newsfeed </a> </td>") ;
+			echo ("<td> <a href=\"logout.php\"> ($Name) Logout </a> </td>") ;
+			echo ("<td> <a href=\"login_success.php\"> Manage Newsfeed </a> </td>") ;
 		?>
 	</tr> </table>
 	<h3> <a href="http://centrallibraryiitindore.blogspot.com/">Follow us on Wordpress </a> </h3>

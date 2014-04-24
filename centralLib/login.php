@@ -1,4 +1,4 @@
-!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <?php
 	session_start();
 ?>
@@ -47,10 +47,10 @@
 		<?php
 			if(isset($_SESSION['myusername']) ){
 				$Name = $_SESSION['myusername'];
-				echo ("<td> <a href=\"logout.php\"> Admin ($Name) Logout </a> </td>") ;
-				echo ("<td> <a href=\"login_success.php\"> Edit Newsfeed </a> </td>") ;
+				echo ("<td> <a href=\"logout.php\"> ($Name) Logout </a> </td>") ;
+				echo ("<td> <a href=\"login_success.php\"> Manage Newsfeed </a> </td>") ;
 			} else {
-				echo ("<td> <a href=\"login.php\"> Admin Login </a> </td>");
+				echo ("<td> <a href=\"login.php\"> Login </a> </td>");
 			}
 		?>
 	</tr> </table>

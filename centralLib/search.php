@@ -41,10 +41,10 @@
 		<?php
 			if(isset($_SESSION['myusername']) ){
 				$Name = $_SESSION['myusername'];
-				echo ("<td> <a href=\"logout.php\"> Admin ($Name) Logout </a> </td>") ;
-				echo ("<td> <a href=\"login_success.php\"> Edit Newsfeed </a> </td>") ;
+				echo ("<td> <a href=\"logout.php\"> ($Name) Logout </a> </td>") ;
+				echo ("<td> <a href=\"login_success.php\"> Manage Newsfeed </a> </td>") ;
 			} else {
-				echo ("<td> <a href=\"login.php\"> Admin Login </a> </td>");
+				echo ("<td> <a href=\"login.php\"> Login </a> </td>");
 			}
 		?>
 	</tr> </table>

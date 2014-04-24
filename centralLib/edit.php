@@ -53,10 +53,10 @@
 		<form style="margin-left:20px;" method="post" action="templater_edited.php"> 
 			<input name="heading" type="text" style="width:900px;" value="'.$heading.'"><br /> 
 			<textarea name="content" placeholder="Content" type="text" style="width:900px; height: 600px;" >'.$content.'</textarea> <br />
-			<input name="author" type="text" value='.$author.'><br />
-			<input name="timestamp_update" type="radio" value="update'.$filename.'"> Update(Current date)
-			<input name="timestamp_update" type="radio" value="retain'.$filename.'"> Retain(Older date)
-			<input type="submit" value="Edit!">
+			<input name="author" type="text" value="'.$author.'"><br />
+			<input name="timestamp_update" type="radio" value="update'.$filename.'"> Update date
+			<input name="timestamp_update" type="radio" value="retain'.$filename.'"> Retain older date
+			<input type="submit" value="Edit">
 		</form>
 	</div>
 </div>   
@@ -67,8 +67,8 @@
 		<td> <a> Privacy Statement </a> </td>
 		<td> <a href="http://iiti.ac.in"> IIT Indore </a> </td>';
 			$Name = $_SESSION['myusername'];
-			echo ("<td> <a href=\"logout.php\"> Admin ($Name) Logout </a> </td>") ;
-			echo ("<td> <a href=\"login_success.php\"> Edit Newsfeed </a> </td>") ;
+			echo ("<td> <a href=\"logout.php\"> ($Name) Logout </a> </td>") ;
+			echo ("<td> <a href=\"login_success.php\"> Manage Newsfeed </a> </td>") ;
 	echo'</tr> </table>
 	<h3> <a href="http://centrallibraryiitindore.blogspot.com/">Follow us on Wordpress </a> </h3>
 </div>    
@@ -81,7 +81,7 @@
 		$heading = ($html->getElementById('heading')->nodeValue);
 		echo " <h4> \"$heading\" </h4>";
 	
-	echo "	<h4> Really Delete?
+	echo "	<h4> Are you sure?
 				<form method=\"post\" action=\"delete.php\">
 				<input type=\"radio\" name=\"delete\" value=\"Yes".$filename."\"> Yes
 				<input type=\"radio\" name=\"delete\" value=\"No".$filename."\"> No <br />
